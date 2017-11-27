@@ -1,22 +1,50 @@
 <head>
-  <title>Stranger Things</title>
+  <title>ELMS: Learning Network</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="./output/styles.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script src="./output/script.js"></script>
+  <style>
+  .intro {
+    z-index: 2;
+  }
+  .logo {
+    top: 0;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    opacity: .6;
+    transition: opacity 1s ease;
+  }
+  .logo-var {
+    opacity: .2;
+    height: 100px;
+    width: 100px;
+  }
+  .logo--hide {
+    opacity: .03;
+  }
+  .logo--final {
+    opacity: .1;
+  }
+  .disclaimer {
+    font-size: 12px;
+    color: #999999;
+    padding-top: 100px;
+    width: 100%;
+  }
+  .disclaimer a {
+    color: #990000;
+  }
+  </style>
 </head>
 <body>
   <div class="intro">
-    <h1 class="intro-title">Stranger Things</h1>
 
     <p class="intro-text intro-text--can">
-      The following demo is performance intensive, and will play audio. If you
-      experience any issues, try sizing down your browser and refreshing.
-      <br/>
       <button class="intro-text-play" data-play>&#9654;</button>
     </p>
-
     <p class="intro-text intro-text--shouldnt">
       Unfortunately this demo uses many features only found in the latest
       version of Google Chrome. You can still run this, but it may not look
@@ -44,44 +72,52 @@
       refresh the browser.
     </noscript>
   </div>
+  <img src="assets/logo.png" class="logo"/>
 
   <div class="viewport">
     <div class="scene">
       <div class="title title--full">
+        <div class="title-word title-word--top">
+          <span class="title-word-letter" data-letter="ELMS">E</span>
+          <span class="title-word-letter" data-letter="ELMS">L</span>
+          <span class="title-word-letter" data-letter="ELMS">M</span>
+          <span class="title-word-letter" data-letter="ELMS">S</span>
+        </div>
+        <div></div>
         <div class="title-word">
           <span class="title-word-letter" data-letter="S1">
-            <span class="title-word-letter-large">S</span>
+            <span class="title-word-letter-large">L</span>
             <div class="titlebar titlebar--left"></div>
           </span>
-          <span class="title-word-letter" data-letter="T1">T</span>
-          <span class="title-word-letter" data-letter="R1">R</span>
-          <span class="title-word-letter" data-letter="A">A</span>
+          <span class="title-word-letter" data-letter="T1">E</span>
+          <span class="title-word-letter" data-letter="R1">A</span>
+          <span class="title-word-letter" data-letter="A">R</span>
           <span class="title-word-letter" data-letter="N1">N</span>
-          <span class="title-word-letter" data-letter="G1">G</span>
-          <span class="title-word-letter" data-letter="E">E</span>
+          <span class="title-word-letter" data-letter="G1">I</span>
+          <span class="title-word-letter" data-letter="E">N</span>
           <span class="title-word-letter" data-letter="R2">
-            <span class="title-word-letter-large">R</span>
+            <span class="title-word-letter-large">G</span>
             <div class="titlebar titlebar--right"></div>
           </span>
           <div class="titlebar titlebar--top"></div>
         </div>
 
         <div></div>
-
         <div class="title-word title-word--second">
-          <span class="title-word-letter" data-letter="T2">T</span>
-          <span class="title-word-letter" data-letter="H">H</span>
-          <span class="title-word-letter" data-letter="I">I</span>
-          <span class="title-word-letter" data-letter="N2">N</span>
-          <span class="title-word-letter" data-letter="G2">G</span>
-          <span class="title-word-letter" data-letter="S2">S</span>
+          <span class="title-word-letter" data-letter="T2">N</span>
+          <span class="title-word-letter" data-letter="H">E</span>
+          <span class="title-word-letter" data-letter="I">T</span>
+          <span class="title-word-letter" data-letter="N2">W</span>
+          <span class="title-word-letter" data-letter="G2">O</span>
+          <span class="title-word-letter" data-letter="S2">R</span>
+          <span class="title-word-letter" data-letter="K">K</span>
         </div>
       </div>
 
       <div class="title title--scene title--scene0"></div>
       <div class="title title--scene title--scene1">
         <div class="title-word">
-          <div class="title-word-letter" data-letter="A">A</div>
+          <div class="title-word-letter" data-letter="A">L</div>
         </div>
       </div>
       <div class="title title--scene title--scene2">
@@ -92,172 +128,158 @@
       <div class="title title--scene title--scene3">
         <div class="title-word">
           <div class="title-word-letter" data-letter="R">R</div>
-          <div class="title-word-letter" data-letter="I">I</div>
+          <div class="title-word-letter" data-letter="I">N</div>
         </div>
       </div>
       <div class="title title--scene title--scene4">
         <div class="title-word">
-          <div class="title-word-letter" data-letter="S">S</div>
-          <div class="title-word-letter" data-letter="G">G</div>
+          <div class="title-word-letter" data-letter="S">T</div>
+          <div class="title-word-letter" data-letter="G">W</div>
         </div>
       </div>
       <div class="title title--scene title--scene5">
         <div class="title-word">
           <div class="title-word-letter" data-letter="R">R</div>
-          <div class="title-word-letter" data-letter="S">S</div>
+          <div class="title-word-letter" data-letter="S">K</div>
         </div>
       </div>
       <div class="title title--scene title--scene6">
         <div class="title-word">
-          <div class="title-word-letter" data-letter="I">I</div>
-          <div class="title-word-letter" data-letter="A">A</div>
-          <div class="title-word-letter" data-letter="T">T</div>
-          <div class="title-word-letter" data-letter="H">H</div>
-          <div class="title-word-letter" data-letter="N">N</div>
-          <div class="title-word-letter" data-letter="G">G</div>
+          <div class="title-word-letter" data-letter="I">A</div>
+          <div class="title-word-letter" data-letter="A">R</div>
+          <div class="title-word-letter" data-letter="T">N</div>
+          <div class="title-word-letter" data-letter="H">E</div>
+          <div class="title-word-letter" data-letter="N">W</div>
+          <div class="title-word-letter" data-letter="G">O</div>
         </div>
       </div>
     </div>
 
     <div class="credits">
       <div class="credits-group">
+        <div class="credits-group-sub">
+          An Open Source Software Solution
+        </div>
+        <div style="margin:10px;"></div>
         <div class="credits-group-credit">
-          A Netflix Original Series
+          That <em>will</em> change education, and the world.
         </div>
       </div>
 
       <div class="credits-group">
-        <div class="credits-group-credit" data-text="Winona Ryder">
-          Winona Ryder
+        <div class="credits-group-credit" data-text="Bryan Ollendyke">
+          Bryan Ollendyke
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-credit">
-          David Harbour
+        <div class="credits-group-credit" data-text="Michael Potter">
+        Michael Potter
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-credit" data-text="Finn Wolfhard">
-          Finn Wolfhard
-        </div>
-        <div class="credits-group-credit" data-text="Millie Bobby Brown">
-          Millie Bobby Brown
+        <div class="credits-group-credit" data-text="Michael Collins">
+          Michael Collins
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-credit" data-text="Gaten Matarazzo">
-          Gaten Matarazzo
-        </div>
-        <div class="credits-group-credit" data-text="Caleb McLaughlin">
-          Caleb M<span>c</span>Laughlin
+        <div class="credits-group-credit" data-text="Katrina Wehr">
+          Katrina Wehr
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-credit" data-text="Natalia Dyer">
-          Natalia Dyer
-        </div>
-        <div class="credits-group-credit" data-text="Charlie Heaton">
-          Charlie Heaton
+        <div class="credits-group-credit" data-text="Charles Lavera">
+          Charles Lavera
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-credit" data-text="Cara Buono">
-          Cara Buono
+        <div class="credits-group-credit" data-text="Nikki Massaro Kauffman">
+          Nikki Massaro Kauffman
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="And">
-          And
-        </div>
-        <div class="credits-group-credit" data-text="Matthew Modine">
-          Matthew Modine
+        <div class="credits-group-credit" data-text="Zane Sensenig">
+          Zane Sensenig
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="Co-Executive Producer">
-          Co-Executive Producer
-        </div>
-        <div class="credits-group-credit" data-text="Iain Paterson">
-          Iain Paterson
+        <div class="credits-group-credit" data-text="Gregg Shanefelt">
+          Gregg Shanefelt
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="Executive Producer">
-          Executive Producer
+        <div class="credits-group-sub" data-text="Community Contributors">
+          Community Contributors
         </div>
-        <div class="credits-group-credit" data-text="Karl Gajdusek">
-          Karl Gajdusek
+        <div class="credits-group-credit" data-text="Jack Davis">
+          Jack Davis
+        </div>
+        <div class="credits-group-credit" data-text="Mark Milutinovic">
+          Mark Milutinovic
+        </div>
+        <div class="credits-group-credit" data-text="Patrick O'Connor">
+          Patrick O'Connor
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="Executive Producers">
-          Executive Producers
+        <div class="credits-group-sub" data-text="Supporting Faculty">
+          Supporting Faculty
         </div>
-        <div class="credits-group-credit" data-text="Cindy Holland">
-          Cindy Holland
+        <div class="credits-group-credit" data-text="Dr. David Fusco">
+          Dr. David Fusco
         </div>
-        <div class="credits-group-credit" data-text="Brian Wright">
-          Brian Wright
-        </div>
-        <div class="credits-group-credit" data-text="Matt Thunell">
-          Matt Thunell
+        <div class="credits-group-credit" data-text="Michael Collins, MFA">
+          Michael Collins, MFA
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="Executive Producers">
-          Executive Producers
+        <div class="credits-group-sub" data-text="Instructional Designers">
+          Instructional Designers
         </div>
-        <div class="credits-group-credit" data-text="Shawn Levy">
-          Shawn Levy
+        <div class="credits-group-credit" data-text="Rick Humphries">
+          Rick Humphries
         </div>
-        <div class="credits-group-credit" data-text="Dan Cohen">
-          Dan Cohen
+        <div class="credits-group-credit" data-text="Melissa Hicks">
+          Melissa Hicks
+        </div>
+        <div class="credits-group-credit" data-text="Kate Miffitt">
+          Kate Miffitt
         </div>
       </div>
-
       <div class="credits-group">
-        <div class="credits-group-sub" data-text="Executive Producers">
-          Executive Producers
+        <div class="credits-group-sub" data-text="Founded At">
+          Founded At
         </div>
-        <div class="credits-group-credit" data-text="The Duffer Brothers">
-          The Duffer Brothers
+        <div class="credits-group-credit" data-text="Pennsylvania State University">
+          Pennsylvania State University
         </div>
       </div>
-
       <div class="credits-final">
-        <div class="credits-group-sub" data-text="Created By">
-          Created By
+        <div class="credits-group-credit">
+          <img class="logo-var" src="assets/logo-var.png" />
+          <br/>
+          ELMS: Learning Network
         </div>
-        <div class="credits-group-credit" data-text="Will O'Beirne">
-          Will O'Beirne
-        </div>
-
+        <div></div>
         <a
-          href="https://wbobeirne.github.io" target="_blank"
+          href="https://www.elmsln.org" target="_blank"
           class="credits-final-link credits-final-link--website"
         ></a>
         <a
-          href="https://twitter.com/wbobeirne" target="_blank"
+          href="https://twitter.com/elmsln" target="_blank"
           class="credits-final-link credits-final-link--twitter"
         ></a>
         <a
-          href="https://github.com/wbobeirne" target="_blank"
+          href="https://github.com/elmsln/elmsln" target="_blank"
           class="credits-final-link credits-final-link--github"
         ></a>
-        <a
-          href="https://codepen.io/wbobeirne" target="_blank"
-          class="credits-final-link credits-final-link--codepen"
-        ></a>
+        <div class="credits-group-sub" data-text="Innovate with us.">
+          Innovate with us.
+        </div>
+        <div class="disclaimer">
+          Forked from <a href="https://github.com/wbobeirne/stranger-things" target="_blank">wbobeirne stranger-things css demo</a>.
+          <br/>
+          There is no claim to the intellectual property of <a href="https://www.netflix.com/title/80057281">Stranger Things</a>, A Netflix Original show created by The Duffer Brothers.
+        </div>
       </div>
     </div>
   </div>
