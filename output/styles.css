@@ -171,9 +171,9 @@ body {
     top: 90%; }
   .titlebar--left {
     left: 0;
-    right: -12%; }
+    right: 45%; }
   .titlebar--right {
-    left: 12%;
+    left: 45%;
     right: 0; }
 
 .credits {
