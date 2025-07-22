@@ -5,8 +5,8 @@
   "main": "script.js",
   "scripts": {
     "start": "web-dev-server",
-    "dev": "nodemon --exec npm run build",
-    "build": "npm run compile:css && npm run compile:postcss && npm run compile:js",
+    "dev": "nodemon --exec npm run local:build",
+    "local:build": "npm run compile:css && npm run compile:postcss && npm run compile:js",
     "compile:css": "./node_modules/.bin/node-sass styles.scss --output output -w",
     "compile:postcss": "./node_modules/.bin/postcss --use autoprefixer -c postcss.json -w -o output/styles.css output/styles.css",
     "compile:js": "./node_modules/.bin/babel script.js --presets es2015,stage-0 --out-dir output -w"
