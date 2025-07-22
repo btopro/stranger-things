@@ -4,6 +4,9 @@
   "description": "Remake of the Stranger Things intro in CSS / JS",
   "main": "script.js",
   "scripts": {
+    "start": "web-dev-server",
+    "dev": "nodemon --exec npm run build",
+    "build": "npm run compile:css && npm run compile:postcss && npm run compile:js",
     "compile:css": "./node_modules/.bin/node-sass styles.scss --output output -w",
     "compile:postcss": "./node_modules/.bin/postcss --use autoprefixer -c postcss.json -w -o output/styles.css output/styles.css",
     "compile:js": "./node_modules/.bin/babel script.js --presets es2015,stage-0 --out-dir output -w"
@@ -11,15 +14,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "autoprefixer": "^6.4.1",
-    "babel-cli": "^6.14.0",
-    "babel-preset-es2015": "^6.14.0",
-    "babel-preset-stage-0": "^6.5.0",
-    "modernizr": "^3.3.1",
-    "node-sass": "^3.9.0",
-    "postcss": "^5.1.2",
-    "postcss-cli": "^2.6.0",
-    "postcss-import": "^8.1.2",
-    "reset-css": "^2.0.20160720"
+    "nodemon": "^3.1.10",
+    "@web/dev-server": "^0.4.6",
+    "autoprefixer": "^10.4.21",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "modernizr": "^3.13.1",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "reset-css": "^5.0.2"
   }
 }

@@ -72,7 +72,7 @@ function start() {
 function startAnimation() {
   // In milliseconds, how long each one is
   var creditsMs = 3000;
-  var scenesMs = [creditsMs, creditsMs * 2, creditsMs, creditsMs, creditsMs, creditsMs, creditsMs * 2, 19500];
+  var scenesMs = [creditsMs, creditsMs, creditsMs, creditsMs, creditsMs, creditsMs, creditsMs * 2, 19500];
 
   // Elements
   var viewport = document.getElementsByClassName("viewport")[0];
